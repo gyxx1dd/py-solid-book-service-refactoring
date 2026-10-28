@@ -1,11 +1,5 @@
 from app.book import Book
-from app.setup_main import Display, Print, Serialize
 from app.book import DISPLAY_STRATEGIES, SERIALIZE_STRATEGIES, PRINT_STRATEGIES
-commands = {
-    "display": Display(),
-    "print": Print(),
-    "serialize": Serialize(),
-}
 
 
 def main(book: Book, command: list[tuple[str, str]]) -> None | str:
